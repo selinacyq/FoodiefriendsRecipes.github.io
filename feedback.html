@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Feedback Form</title>
+  <meta charset="UTF-8"/>
+  <meta name="author" content="Selina Chang">
+  <meta name="description" content="Feedback form Food Recipe">
+  <meta name="keywords" content="Feedback, form">
+  <link rel= "stylesheet" type="text/css" href="styles.css">
+  <script src="script/app.js" charset="utf-8"></script>
+</head>
+<body>
+
+  <header>
+    <nav class="menu-bar">
+  <div class="logo"><a href="index.html">Foodie.<span href="index.html">Friends</span></a></div>
+  <ul class="menu">
+    <li><a href="recipe.html">Recipes</a>
+      <ul class="submenu">
+        <li><a href="desserts.html">Dessert</a></li>
+        <li><a href="basic_meal.html">Basic Meal</a>
+          <ul class="submenu-basic-meal">
+        <li><a href="breakfast.html">Breakfast</a></li>
+        <li><a href="lunch.html">Lunch</a></li>
+        <li><a href="dinner.html">Dinner</a></li>
+          </ul>
+        </li>
+        <li><a href="vegetarian.html">Vegetarian</a></li>
+        <li><a href="soup.html">Soup</a></li>
+        <li><a href="beverages.html">Beverages</a></li>
+      </ul>
+    </li>
+    <li><a href="about_us.html">About Us</a></li>
+    <li><a href="contact_us.html">Contact Us</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</nav>
+</header>
+
+  <h1>Feedback Form</h1>
+  <form id="feedback-form">
+    <fieldset>
+      <legend>Contact Information</legend>
+      <table>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Phone:</label></td>
+          <td><input type="tel" id="phone" name="phone"></td>
+        </tr>
+      </table>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Feedback</legend>
+      <table>
+        <tr>
+          <td><label for="rating">Rating:</label></td>
+          <td>
+            <select id="rating" name="rating">
+              <option value="5">Excellent</option>
+              <option value="4">Good</option>
+              <option value="3">Average</option>
+              <option value="2">Below Average</option>
+              <option value="1">Poor</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="comments">Comments:</label></td>
+          <td><textarea id="comments" name="comments" rows="4" cols="30"></textarea></td>
+        </tr>
+        <tr>
+          <td><label>Preferred Contact Method:</label></td>
+          <td>
+            <input type="radio" id="contact-email" name="contact-method" value="email">
+            <label for="contact-email">Email</label>
+            <br>
+            <input type="radio" id="contact-phone" name="contact-method" value="phone">
+            <label for="contact-phone">Phone</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="meeting-time">Preferred Meeting Time:</label></td>
+          <td><input type="datetime-local" id="meeting-time" name="meeting-time"></td>
+
+        </tr>
+      </table>
+    </fieldset>
+    
+        <input type="submit" value="Submit">
+
+  </form>
+
+<footer>
+    <address>&copy; <a href="foodiefriends.html">Foodie Friends</a> | 24 May 2023</address>
+    <ul>
+      <a href="index.html">Home</a> | <a href="recipe.html">Recipe book</a> | <a href="about_us.html">About us</a> | <a href="contact_us.html">Contact us</a> | <a href="faq.html">FAQ</a> | <a href="feedback.html">Feedback</a>
+    </ul>
+</footer>
+
+
+</body>
+</html>
